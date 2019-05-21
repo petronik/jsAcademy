@@ -1,0 +1,8 @@
+{
+  "name": "jsAcademy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/petronik/jsAcademy.git",
+  "author": "Petronik <petronik@ukr.net>",
+  "license": "MIT"
+}
