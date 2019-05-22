@@ -10,10 +10,22 @@
     <body>
         <h2>Paralaxwerwer</h2>
     <p><span>This is not span</span></p>
-    <button>Click me!</button>
+    <input type="text" id="in">
+    <button id="add">Добавить</button>
+    <hr>
+    <div id="out"></div>
 
     <script>
-    console.log("This is life")
+    window.onload = function(){
+        var todoList = [];
+        document.getElementById('add').onclick = function() {
+            var d = document.getElementById('in').value;
+            //{todo : Add Bread, check : false}
+            var temp = {};
+            temp.todo = d;
+            temp.check
+ = false        }
+    }
         </script>
     </body>
 </html>
