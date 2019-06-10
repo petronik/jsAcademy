@@ -86,7 +86,9 @@
 //     default: console.log("Something went wrong!");
 //         break;
 // }
-let num = 50;
+
+
+//let num = 50;
 // while (num < 55) {
 //     console.log(num);
 //     num++;
@@ -111,6 +113,44 @@ let num = 50;
 //     }
 // }
 
-for (let i = 1; i < 10; i++) {
-    console.log(i);
+// for (let i = 1; i < 10; i++) {
+//     console.log(i , i);
+// }
+
+
+//-------functions----------------------------
+
+// let num = 20;
+// function showFirstMessage(text) {
+//     console.log(text);
+//     const num = 10;
+//     console.log(num);
+// }
+// showFirstMessage("Hello!");
+// console.log(num);
+
+
+// let calc = function (a, b) {
+//     return (a + b);
+// };
+
+let calc = (a, b) => a + b;
+console.log(calc(8, 4));
+console.log(calc(4, 3));
+
+function retVar() {
+    let num = 50;
+    return num;
 }
+let anotherNum = retVar();
+console.log(anotherNum);
+
+let str = "test";
+console.log(str.length);
+ console.log(str.toUpperCase());
+ console.log(str.toLocaleLowerCase());
+
+ let twelve = "12.2px";
+ //console.log(Math.round(twelve));
+ console.log(parseInt(twelve));
+ console.log(parseFloat(twelve));
