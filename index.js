@@ -109,6 +109,6 @@ options.colors = {
 delete options.bool;
 console.log(options);
 for ( let key in options) {
-    console.log("Свойство " + key + " имеет значение" + options[key]);
+    console.log("Свойство " + key + " имеет значение: " + options[key]);
 }
 console.log(Object.keys(options).length);
