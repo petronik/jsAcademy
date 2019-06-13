@@ -22,13 +22,96 @@
 //     console.log(arr);
 
 // let arr = ["aawwe", "zzz","pp", "qwe"],
-// i = arr.join(', ');
-// console.log(i);
-let arr = [1, 15, 4, 12, 11,17],
- i = arr.sort(compareNum);
+// i = arr.join(", ");
+// console.log(arr);
 
- function compareNum(a, b){
-     return b-a;
- }
 
- console.log(arr);
+
+// let arr = [1, 15, 4, 12, 11, "aawwe", "zzz","pp", "qwe"],
+//  i = arr.sort(compareNum);
+
+//  function compareNum(a, b){
+//      return a - b;
+//  }
+
+//  console.log(arr);
+
+
+//----__protoTyping__-------
+//  let soldier = {
+//      health: 400,
+//      armor: 999,
+//      weapon: 'knife'
+//  };
+//  let john = {
+//      health: 100
+//  };
+//  john.__proto__ = soldier;
+//  console.log(john);
+//  console.log(john.weapon);
+
+
+//-----Создание объектов через "new"------
+
+// function Animal(name) {
+//     this.name = name;
+//     this.canWalk = true;
+// }
+// var animal = new Animal("ёжик");
+// console.log(animal);
+
+// function BigAnimal() {
+//     this.name = "Mouse";
+//     return {name:"Godzilla"};
+// }
+// console.log(new BigAnimal().name);
+
+// function User(name) {
+//     this.name = name;
+//     this.sayHi = function() {
+//         console.log("My name: " + this.name);
+//     };
+// }
+// var ivan = new User("Ivan");
+// ivan.sayHi();
+
+// function User(firstName, lastName) {
+//     var phrase = "Hello";
+
+//     function getFullName() {
+//         return firstName + " " + lastName;
+//     }
+//     this.sayHi = function() {
+//         console.log( phrase + ", " + getFullName() );
+//     };
+// }
+// var vasya = new User("Vasya", "Petrov");
+// vasya.sayHi();
+
+// var obj = {};
+// function A() {return obj; }
+// function B() {return obj; }
+
+// var a = new A();
+// var b = new B();
+
+// console.log( a==b);
+
+
+function Calculator() {
+    this.read = function() {
+        this.a = +prompt('a?', 0);
+        this.b = +prompt('b?', 0);
+    };
+
+this.sum = function()  {
+    return this.a + this.b;
+};
+this.mul = function () {
+    return this.a * this.b;
+};
+}
+ var calculator = new Calculator();
+ calculator.read();
+ alert( "Cymma=" + calculator.sum() );
+ alert("Произведение=" + calculator.mul() );
