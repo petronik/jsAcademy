@@ -134,23 +134,30 @@
 //     return (a + b);
 // };
 
-let calc = (a, b) => a + b;
-console.log(calc(8, 4));
-console.log(calc(4, 3));
+// let calc = (a, b) => a + b;
+// console.log(calc(8, 4));
+// console.log(calc(4, 3));
 
-function retVar() {
-    let num = 50;
-    return num;
-}
-let anotherNum = retVar();
-console.log(anotherNum);
+// function retVar() {
+//     let num = 50;
+//     return num;
+// }
+// let anotherNum = retVar();
+// console.log(anotherNum);
+//======================================
+// let str = "test";
+// console.log(str.length);
+//  console.log(str.toUpperCase());
+//  console.log(str.toLocaleLowerCase());
 
-let str = "test";
-console.log(str.length);
- console.log(str.toUpperCase());
- console.log(str.toLocaleLowerCase());
-
- let twelve = "12.2px";
- //console.log(Math.round(twelve));
- console.log(parseInt(twelve));
- console.log(parseFloat(twelve));
+//  let twelve = "12.2px";
+//  //console.log(Math.round(twelve));
+//  console.log(parseInt(twelve));
+//  console.log(parseFloat(twelve));
+ //==================================
+//*************Factorial***************/
+ let fact = 1;
+ for(var i = 1; i < 10; i++) {
+     fact = fact * i;
+     console.log(i + "! = " + fact);
+ }

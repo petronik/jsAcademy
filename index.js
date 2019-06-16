@@ -99,7 +99,7 @@ let options = {
     height: 1024,
     name: "test"
 };
-console.log(options.name);
+console.log(options.width);
 options.bool = false;
 options.colors = {
     border: "black",
