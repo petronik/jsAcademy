@@ -1,14 +1,12 @@
-//let arr = ["first", 2, 3, "four", 5];
+// let arr = ["first", 2, 3, "four", 5];
 
-// for (let i = 0; i < arr.length; i++) {
-//     console.log(arr[i]);
-// }
+// // for (let i = 0; i < arr.length; i++) {
+// //     console.log(arr[i]);
+// // }
 
-// arr.forEach(function(item, i, mass){
-//     console.log('элемент ' + i + ': ' + item + "(массив: " + mass + ")");
+// arr.forEach(function(item, i, mass) {
+//     console.log(i + ': ' + item + " (массив: " + mass + ')');
 // });
-// console.log(arr);
-
 
 // let mass = [1,3,4,6,7];
 
@@ -18,23 +16,28 @@
 
 // let ans = prompt("", ""),
 //     arr = [];
-//     arr = ans.split(',');
+//     arr = ans.sp6pn 
+// P-8 l;hn[/blit(',');
 //     console.log(arr);
 
-// let arr = ["aawwe", "zzz","pp", "qwe"],
-// i = arr.join(", ");
+// let arr = ['aaa', 'bbbb', 'dfgdfg'],
+// i = arr.join(', ');
 // console.log(arr);
+// console.log(i);
 
 
 
-// let arr = [1, 15, 4, 12, 11, "aawwe", "zzz","pp", "qwe"],
-//  i = arr.sort(compareNum);
+
+let arr = [1, 15, 4, 12, 11, "aawwe", "zzz","pp", "qwe"], 
+i = arr.sort();
+let ob = {};
 
 //  function compareNum(a, b){
 //      return a - b;
 //  }
 
-//  console.log(arr);
+ console.log(arr);
+ console.log(Array.isArray(ob));
 
 
 //----__protoTyping__-------

@@ -94,21 +94,32 @@
 // }
 //===================================
 
-let options = {
-    width: 1024,
-    height: 1024,
-    name: "test"
-};
-console.log(options.width);
-options.bool = false;
-options.colors = {
-    border: "black",
-    bg: "red"
-};
+// let options = {
+//     width: 1024,
+//     height: 1024,
+//     name: "test"
+// };
+// console.log(options.width);
+// options.bool = false;
+// options.colors = {
+//     border: "black",
+//     bg: "red"
+// };
 
-delete options.bool;
-console.log(options);
-for ( let key in options) {
-    console.log("Свойство " + key + " имеет значение: " + options[key]);
+// delete options.bool;
+// console.log(options);
+// for ( let key in options) {
+//     console.log("Свойство " + key + " имеет значение: " + options[key]);
+// }
+// console.log(Object.keys(options).length);
+
+let object2 = {
+    color: "blue",
+    width: 1000,
+    bool: true,
+};
+object2.height = 1200;
+
+for (let key in object2) {
+    console.log('Свойство ' + key + ' имеет значение ' + object2[key]);
 }
-console.log(Object.keys(options).length);
