@@ -156,8 +156,27 @@
 //  console.log(parseFloat(twelve));
  //==================================
 //*************Factorial***************/
- let fact = 1;
- for(var i = 1; i < 10; i++) {
-     fact = fact * i;
-     console.log(i + "! = " + fact);
- }
+//  let fact = 1;
+//  for(var i = 1; i < 10; i++) {
+//      fact = fact * i;
+//      console.log(i + "! = " + fact);
+//  }
+
+//************************************* */
+function hello() {
+    console.log("Hello World!");
+}
+hello();
+
+function hi() {
+    console.log("Hello World!");
+}
+hi();
+let arr = [1, 15, 4, 30, 42],
+    i = arr.sort(compareNum);
+
+    function compareNum(a, b) {
+        return a-b;
+    }
+    console.log(arr);
+    
