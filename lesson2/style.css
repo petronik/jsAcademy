@@ -42,3 +42,15 @@ button{
     top:0;
     left:-30px;
 }
+.black{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    color: white;
+    height: 50px;
+    background-color: #000;
+    margin: 0 auto;
+    font-size: 2rem;
+
+}
