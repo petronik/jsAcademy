@@ -29,7 +29,7 @@ div.classList.add('black');
 div.innerHTML = 'Hello World!';
 
 //document.body.appendChild(div);
-//wrapper.appendChild(div);
+//wrapper.(div);
 document.body.insertBefore(div, circle[0]);
 document.body.removeChild(circle[1]);
 wrapper.removeChild(heart[1]);
