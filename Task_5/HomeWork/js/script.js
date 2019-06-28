@@ -9,7 +9,7 @@ let list = document.getElementsByTagName('li'),
     question,
     p = document.createElement('p'),
     opinion = document.getElementById('prompt');
-console.log(title1.innerHTML);
+
 ulist.appendChild(li);
 li.classList.add('menu-item');
 li.appendChild(text);
@@ -35,6 +35,5 @@ window.onload = function answer(){
         alert('Слишком Много Букв!');
         answer();
     }
-    console.log("done");
 };
 
