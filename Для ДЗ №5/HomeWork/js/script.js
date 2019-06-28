@@ -3,26 +3,38 @@ let list = document.getElementsByTagName('li'),
     ulist = document.querySelector('.menu'),
     text = document.createTextNode('Пятый пункт'),
     body1 = document.getElementsByTagName('body'),
-    titl = document.querySelector('#title'),
+    title1 = document.querySelector('#title'),
     adv = document.querySelector('.adv'),
     col = document.querySelectorAll('.column'),
-    question ,
+    question,
+    p = document.createElement('p'),
     opinion = document.getElementById('prompt');
-console.log(body1[0]);
+console.log(title1.innerHTML);
 ulist.appendChild(li);
 li.classList.add('menu-item');
 li.appendChild(text);
 ulist.insertBefore(list[2], list[1]);
 body1[0].style.background = ' url(../img/apple_true.jpg) center no-repeat';
 col[1].removeChild(adv);
+opinion.appendChild(p);
+p.classList.add('paragraph');
+title1.innerHTML = 'Мы продаем только подлинную технику Apple';
+
+
 
 
 window.onload = function answer(){
-    question = prompt('Ваше отношение к Apple?');
-    opinion.innerHTML = question;
+    question = prompt('Ваше отношение к Apple? (Лимит 50 символов)');
+    
+    p.innerHTML = question;
     while (question == "" || question == null ) {
-        console.log("done");
+        
         question = prompt('Ваше отношение к Apple?', "");
     }
+    if(question.length > 500){
+        alert('Слишком Много Букв!');
+        answer();
+    }
+    console.log("done");
 };
 
