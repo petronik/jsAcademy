@@ -3,6 +3,7 @@ html, body{
     padding: 0;
     margin: 0;
 }
+
 #particles-js{
     background: red;
     position: fixed;
@@ -40,6 +41,7 @@ h1{
     min-height: 250px;
     border:double 3px #333;
 }
+
 .wrap{
     position: absolute;
     width: 100%;
@@ -83,3 +85,98 @@ h1{
 }
 .card:hover .front{transform: rotateY(180deg);}
 .card:hover .back{transform: rotateY(360deg);}
+
+/* Card #2 */
+
+.dws{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pulse, .block, .phone{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.block{
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+.pulse{
+    background: #5cc2e2;
+    position: relative;
+    transition: .5s;
+}
+.phone{
+    font-size: 50px;
+    line-height: 94px;
+    animation: phone .9s ease-in-out infinite;
+}
+
+.text{
+    opacity: 0;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    top: 28px;
+    font-size: 15px;
+    transform: scaleX(-1);
+    transition: .5s ease-in-out;
+}
+.phone i {
+    transition: .5s ease-in-out
+}
+.pulse:hover{
+    background: #29aee3;
+}
+.pulse:hover i {
+    transition: .5 ease-in-out;
+    transform: scale(0);
+}
+.pulse:hover .text{
+    transform:scaleX(1);
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+.pulse:hover::before,
+.pulse:hover::after {
+    content: '';
+    position:absolute;
+    border: 1px solid #29aee3;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 1.8s linear infinite;
+    opacity: 0;
+}
+.pulse:hover::after{
+    animation-delay: .5s;
+}
+@keyframes phone {
+    0%, 100% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(21deg);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        trasform: scale(1.2);
+        opacity: 0;
+    }
+}
