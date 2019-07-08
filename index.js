@@ -123,3 +123,5 @@ object2.height = 1200;
 for (let key in object2) {
     console.log('Свойство ' + key + ' имеет значение ' + object2[key]);
 }
+
+

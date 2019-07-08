@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <button data-action="save">Сохранить</button>
+        <button data-action="load">Загрузить</button>
+        <button data-action="search">Поиск</button>
+    </div>
+
+    <script>
+        function Menu(elem) {
+            this.save = function() {
+                console.log('saving..');
+            };
+            this.load = function() {
+                console.log('loading..');
+            };
+            this.search = function() {
+                console.log('searching..');
+            };
+            let self = this;
+
+            elem.onclick = function(e) {
+            let target = e.target,
+                action = target.getAttribute('data-action');
+            if(action) {
+                 self[action]();
+            }
+         }; 
+        }
+        new Menu(menu);
+         
+    </script>
+</body>
+</html>
