@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .scroll{
+            width: 400px;
+            height: 350px;
+            overflow: scroll;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            display: block;
+            margin: 0  auto;
+            margin-top: 50px;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsam ut mollitia laborum sequi placeat voluptatibus natus odio quaerat eligendi quod ducimus eos? Porro eveniet illum beatae eos commodi aperiam consectetur aliquam tempora iusto voluptas quas distinctio libero error ut totam debitis inventore quae magni placeat doloribus, et quod reiciendis. Quibusdam minima doloremque ab nostrum error explicabo ipsa, molestias molestiae asperiores soluta nam deleniti tempore quos temporibus nisi facere, earum autem accusantium. Vel atque ducimus, libero expedita laborum magnam dolorum repellat vero earum maiores accusamus labore ea voluptates iste voluptatem dignissimos consectetur beatae maxime veritatis quod eveniet velit. Doloremque ullam qui ducimus facilis laborum deserunt, rerum aliquam et. Eligendi itaque ipsa fugit excepturi exercitationem sequi esse commodi harum dolorem, similique impedit ad ab aperiam reprehenderit totam labore ipsam maiores molestias qui quaerat consequatur deleniti. Amet totam, ratione nobis nam sapiente nostrum doloremque incidunt possimus corporis sequi aut, necessitatibus et laborum culpa pariatur iure cumque ipsam. Fuga reprehenderit ullam autem earum velit dolor modi quia neque? Id nemo ipsum repudiandae mollitia est et tempora maiores, consequatur placeat voluptate iusto, dolorum nostrum provident aspernatur facilis excepturi magni itaque amet. Quo numquam, obcaecati suscipit nobis, quibusdam sit asperiores dolorem earum quaerat aperiam, consectetur laboriosam sequi! Natus aliquam totam consequatur ratione eum alias. Laudantium illum dolore eveniet tenetur amet quia odit atque aliquid reprehenderit dolorem blanditiis doloribus ipsa quas ad accusantium perferendis, totam nostrum. Dolor magni repellat pariatur? Delectus dolore quod fugiat tenetur nam pariatur quasi cumque officia. Qui quos laborum doloremque cum ab omnis sint ut repellat nisi officiis consectetur culpa voluptatibus, dignissimos placeat ea expedita accusantium fuga ipsa, voluptate, quia atque reprehenderit et ipsam facere. Dignissimos odio itaque id temporibus non iure nesciunt aliquid consequuntur fugiat. Nemo soluta natus temporibus totam, ipsa consequuntur quas iure velit at quidem porro ut laboriosam quaerat, ipsam quis quod aperiam animi. Ratione tenetur velit, quo temporibus, ducimus nam alias reprehenderit obcaecati porro cum minima officia rerum, expedita nesciunt! Aliquam tenetur soluta quis sit magni qui quae natus numquam? Numquam repellat, voluptatibus saepe, optio error eum corporis ullam sint id, cum fugit adipisci consequatur nostrum itaque? Saepe expedita molestias aspernatur quia accusamus aut, animi ab earum id inventore fuga iste, nesciunt, officia voluptatibus reprehenderit facilis? Suscipit officia voluptate non nam impedit quas praesentium ea necessitatibus velit quisquam alias, temporibus perspiciatis earum ratione quod quasi sequi quae quaerat ad natus iste odio voluptatum! Vel nihil doloribus nisi, corrupti ullam provident. Dicta, mollitia. Voluptatibus quam obcaecati voluptates, adipisci molestias deleniti natus assumenda nisi, repellendus aperiam sequi optio consequatur praesentium id temporibus odit at ab ut quo fugit asperiores distinctio ad possimus repudiandae! Quisquam eligendi facere fuga ducimus harum consequatur hic necessitatibus quia expedita nisi nihil, corporis, veritatis libero nesciunt nulla? Dicta nostrum omnis impedit pariatur consequuntur, delectus suscipit! Deserunt saepe, nam tempora temporibus laudantium accusantium. Voluptas eveniet sint harum eos fuga hic consequatur, quasi voluptates a, velit consectetur necessitatibus non sit libero aperiam quidem iste, id esse dolorem nobis aspernatur labore doloremque error temporibus. Placeat nesciunt maiores et minima.</div>
+
+    <button class="button">Button</button>
+<script>
+
+    let box = document.querySelector('.scroll'),
+        btn = document.querySelector('button');
+    let width = box.clientWidth,
+        height = box.clientHeight;
+
+    console.log(width);
+    console.log(height);
+    console.log(box.getBoundingClientRect().left);
+
+    console.log(document.documentElement.clientWidth);
+    console.log(document.documentElement.clientHeight);
+
+    console.log(document.documentElement.scrollTop);
+
+    btn.addEventListener('click', function() {
+        box.scrollTop = 0;
+    });
+
+    scrollBy(0, 200);
+
+</script>
+</body>
+</html>
