@@ -71,7 +71,6 @@ function setClock(id, endTime){
             hours.textContent = t.hours;
             minutes.textContent = t.minutes;
             seconds.textContent = t.seconds;
-        
            
             if(t.seconds < 10) {
                 seconds.textContent = '0' + t.seconds;
@@ -82,8 +81,6 @@ function setClock(id, endTime){
             if(t.hours < 10) {
                 hours.textContent = '0' + t.hours;
             }
-            
-
             if(t.total <= 0) {
                 clearInterval(timeInterval);
             }
