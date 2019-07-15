@@ -8,24 +8,15 @@
 
     </head>
     <body>
-        <h2>Paralaxwerwer</h2>
-    <p><span>This is not span</span></p>
-    <input type="text" id="in">
-    <button id="add">Добавить</button>
-    <hr>
-    <div id="out"></div>
-
-    <script>
-    window.onload = function(){
-        var todoList = [];
-        document.getElementById('add').onclick = function() {
-            var d = document.getElementById('in').value;
-            //{todo : Add Bread, check : false}
-            var temp = {};
-            temp.todo = d;
-            temp.check
- = false        }
-    }
-        </script>
+      
+        <div class="scene">
+            <div data-speed='-10' class="layer layer-bg"></div>
+            <div data-speed='-40' class="layer layer-1"></div>
+            <div data-speed='-80' class="layer layer-2"></div>
+        </div>
+        <header>
+            <h1>Header 1</h1>
+        </header>
+    <script src="main.js"></script>
     </body>
 </html>

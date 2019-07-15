@@ -1,20 +1,42 @@
-body{
-  background-color: antiquewhite;
-  font-size: 1.5rem;
-  height: 100vh;
+body {
+  margin: 0;
 }
-button{
-  height: 2rem;
-  border:none;
-  border-radius: 3px;
-  color: red;
-  background-color: #fff;
-  cursor: pointer;
-  
+* {
+  box-sizing: border-box;
 }
-button:hover{
-  opacity: .5;
-  font-size: 1.5rem;
-  background-color: #000;
-
+img{
+  max-width: 100%;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scene{
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+}
+.layer{
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 120%;
+  height: 100%;
+}
+.layer-bg{
+  background: url('img/parallax_bg.png') center no-repeat;
+  background-size: cover;
+}
+.layer-1{
+  background: url('img/parallax_layer1.png') center no-repeat;
+  background-size: cover;
+}
+.layer-2{
+  background: url('img/parallax_layer2.png') center no-repeat;
+  background-size: cover;
 }

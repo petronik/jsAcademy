@@ -33,7 +33,49 @@
 // console.log( counter2() );
 // console.log( counter2() );
 
-var a = 3;
-console.log(a);
- var a = 5;
-console.log(a);
+// let message = (function(name) {
+//     return 'Hello ' + name + '! ';
+// })('Petro');
+// console.log(message);
+
+
+// let numbers = {
+//     numberA: 5,
+//     numberB: 10,
+//     sum: function() {
+//         console.log(this === numbers);
+//         function calculate() {
+//             console.log(this === numbers);
+//             return this.numberA + this.numberB;
+            
+//         }
+//            use .call() method to modify the context
+//         return calculate.call(this); // => 15
+//     }
+// };
+// console.log(numbers.sum());
+
+//  Вызов метода
+
+// let calc = {
+//     num: 0,
+//     increment: function() {
+//         console.log(this === calc);
+//         this.num += 1;
+//         return this.num;
+//     }
+// };
+// // method invocation. this is calc
+// console.log(calc.increment());
+// console.log(calc.increment());
+
+let numbers = {
+    array: [3, 5, 10],
+    getNumbers: function() {
+        return this.array;
+    }
+};
+
+let boundGetNumbers = numbers.getNumbers.bind(numbers);
+console.log(boundGetNumbers());
+console.log(numbers.getNumbers);
