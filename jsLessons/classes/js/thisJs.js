@@ -1,24 +1,3 @@
-// function User(name, id) {
-//     this.name = name;
-//     this.id = id;
-//     this.human = true;
-//     this.hello = function() {
-//         console.log('Hello! ' + this.name);
-//     };
-// }
-// User.prototype.exit = function(name) {
-//     console.log('Пользователь ' + this.name + ' ушел'); 
-// }
-
-// let ivan = new User('Ivan', 25),
-//     alex = new User('Alex', 20),
-//     vova = new User( 'Vova', 42);
-
-// console.log(ivan);
-// console.log(alex);
-// console.log(vova);
-//  ivan.exit();
-
 // 'use strict'
 // function showThis(a, b) {
 //     console.log(this);
@@ -61,17 +40,26 @@
 //   console.log(double(3));
 //   console.log(double(10));
 
-let btn = document.querySelector('button');
 
-btn.addEventListener('click', function() {
+let btn = document.querySelectorAll('button');
+console.log(btn);
+let myBody = document.querySelector('body');
+
+myBody.addEventListener('click', function(event) {
     console.log(this);
     this.style.backgroundColor = 'red';
-    this.style.width = '300px';
+    event.target.style.backgroundColor = 'green';
     function showThis() {
         console.log(this);
     }
     showThis();
 });
+
+
+
+// btn.forEach(function(item) {
+//     item.style.backgroundColor = 'red';
+// });
 
  // 1) просто вызов функции - this = window/undefind;
  // 2) Метод обЪекта - this = объект;
