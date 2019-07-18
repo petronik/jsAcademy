@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    margin: 50px;
+    text-align: center;
+}
+.inputBox{
+    margin:50px;
+}
+#myChange{
+    margin:20px;
+    border: 5px double red;
+    width: 200px;
+    height: auto;
+    min-height: 20px;
+
+}

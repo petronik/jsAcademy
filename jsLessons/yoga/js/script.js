@@ -67,27 +67,43 @@ function setClock(id, endTime){
 
         function updateClock() {
             let t = getTimeRemaning(endTime);
-            days.textContent = t.days;
-            hours.textContent = t.hours;
-            minutes.textContent = t.minutes;
-            seconds.textContent = t.seconds;
-           
+            days.textContent = t.days + '_d';
+            hours.textContent = t.hours + '_h';
+            minutes.textContent = t.minutes + '_m';
+            seconds.textContent = t.seconds + '_s';
+        
             if(t.seconds < 10) {
-                seconds.textContent = '0' + t.seconds;
+                seconds.textContent = '0' + t.seconds  + '_s';
             }
             if(t.minutes < 10) {
-                minutes.textContent = '0' + t.minutes;
+                minutes.textContent = '0' + t.minutes + '_m';
             }
             if(t.hours < 10) {
-                hours.textContent = '0' + t.hours;
+                hours.textContent = '0' + t.hours + '_h';
             }
             if(t.total <= 0) {
                 clearInterval(timeInterval);
             }
-
         }
 }
-
 setClock('timer', deadline);
 
+//Modal
+
+let more = document.querySelector('.more'),
+    overlay = document.querySelector('.overlay'),
+    close = document.querySelector('.popup-close');
+
+    more.addEventListener('click', function() {
+        overlay.style.display = 'block';
+        this.classList.add('more-splash');
+        document.body.style.overflow = 'hidden';
+
+    });
+    close.addEventListener('click', function() {
+        overlay.style.display = 'none';
+        more.classList.remove('more-splash');
+        document.body.style.overflow = '';
+
+    })
 });
