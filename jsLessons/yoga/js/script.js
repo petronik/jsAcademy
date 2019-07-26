@@ -105,5 +105,5 @@ let more = document.querySelector('.more'),
         more.classList.remove('more-splash');
         document.body.style.overflow = '';
 
-    })
+    });
 });

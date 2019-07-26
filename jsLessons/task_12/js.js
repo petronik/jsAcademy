@@ -21,8 +21,17 @@ class Options {
         document.body.appendChild(div);
     }
 }
-
-const myDivs = new Options(200,400, 'green', 30, 'center');
+var boo;
+myInput[0].addEventListener('input', function(boo) {
+    boo = myInput[0].value;
+console.log(myDivs.height);
+});
+const myArr = [200, 700, 'green', 30, 'center'];
+const myDivs = new Options(...myArr);
+console.log(boo);
 myDivs.divCreator();
+
+
+
 
 

@@ -1,0 +1,12 @@
+input{
+    line-height: 30px;
+    font-size: 20px;
+    padding:5px;
+    margin:5px;
+}
+span{
+    
+    font: italic 900 20px/40px sans-serif;
+    padding:5px;
+    margin:5px;
+}
