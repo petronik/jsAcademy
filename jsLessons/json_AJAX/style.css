@@ -10,3 +10,25 @@ span{
     padding:5px;
     margin:5px;
 }
+#myJson{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    max-height: 500px;
+    border: solid red 2px;
+    margin: 10px auto;
+    font: italic 20px/30px bold sans-serif;
+    padding:5px;
+    overflow: auto;
+
+}
+.post{
+    border: solid red 1px;
+    margin: 5px;
+    padding: 15px;
+}
+.span1{
+    text-transform: uppercase;
+    text-align: center;
+}
