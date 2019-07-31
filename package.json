@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/petronik/jsAcademy.git",
   "author": "Petronik <petronik@ukr.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
 }
