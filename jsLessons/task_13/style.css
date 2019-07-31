@@ -1,6 +1,14 @@
-from input{
-    margin:15px;
+body{
+    margin: 0;
+    padding: 0;
+    background: #f0f791;
 }
-input{
+.formBox{
     margin:5px;
+    background: #efefef;
+    border-radius: 5px;
+}
+.formClass{
+    background-color: #8ffce8;
+    text-align: center;
 }

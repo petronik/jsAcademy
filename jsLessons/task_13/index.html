@@ -8,18 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-   <form action="#" method="post">
-       <input name='name' title="Name" type="text">
-       <input name='surname' title="Surname" type="text">
-       <input name='email' title="email" type="email">
+   <form action="#" class="formClass">
+       <label for="firstName">Your Name:</label>
+       <input class="formBox" id="firstName" name='name' title="Name" type="text">
+       <label for="surname">Your Surname:</label>
+       <input class="formBox" id="surname" name='surname' title="Surname" type="text">
        <br>
-       <textarea name="textarea" id="myTextarea" title="Textarea" cols="30" rows="10">
+       <label for="email">Your Email:</label>
+       <input class="formBox" id="email" name='email' title="email" type="email">
+       <br>
+       <!-- <textarea class="formBox" name="textarea" id="myTextarea" title="Textarea" cols="30" rows="10">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
            Eligendi vero delectus esse id libero unde 
            nihil est alias vitae dolor!
-        </textarea>
+        </textarea> -->
        <br>
-       <input type="submit" value="Submit">
+       <button class="formBox" type="submit" value="Submit">Submit</button>
        <button type="reset">Reset</button>
    </form>
    <script src="ajax.js"></script>
