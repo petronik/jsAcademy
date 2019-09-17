@@ -9,10 +9,10 @@ let btn = document.querySelectorAll('button'),
 //     console.log('You clicked first button again');
 // };
 
-btn[0].addEventListener('click', function(event){
-    console.log('Произошло событие: ' + event.type +
-     ' на элементе  ' + event.target);
-});
+// btn[0].addEventListener('click', function(event){
+//     console.log('Произошло событие: ' + event.type +
+//      ' на элементе  ' + event.target);
+// });
 
 
 wrap.addEventListener('click', function() {
@@ -26,7 +26,7 @@ link.addEventListener('click', function () {
 });
 
 btn.forEach(function(item) {
-    item.addEventListener('mouseleave', function () {
+    item.addEventListener('click', function () {
         console.log('Вышли!');
     });
 });
