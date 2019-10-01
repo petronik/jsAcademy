@@ -1,0 +1,12 @@
+let a = new Set();
+a.add(1);
+a.add(2);
+a.add('hello');
+a.add(true);
+// a.clear();
+// a.delete('hello');
+console.log(a);
+console.log(a.size);
+console.log(a.has(4));
+console.log(a.keys());
+console.log(a.values());
